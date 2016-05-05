@@ -15,10 +15,15 @@ export default class Timer extends Component {
     }, 1000)
   }
   render(){
+    if(this.state.count%5 ==  0){
+      return <div> <img src="http://images1.miaminewtimes.com/imager/u/745xauto/8203153/feature1-4-8c59f2cd305f744b.jpg" />  </div>
+    }
+    else {
     return (
       <div>
       {this.state.count}
       </div>
     )
   }
+}
 }
